@@ -1,1 +1,17 @@
-
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-file
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-react-app-v2  # Change the label value to a new label.
+  template:
+    metadata:
+      labels:
+        app: my-react-app-v2  # Change the label value to a new label.
+    spec:
+      containers:
+        - name: my-react-app-container
+          image: anuruddhakhare/app
