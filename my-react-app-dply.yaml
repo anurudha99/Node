@@ -3,15 +3,15 @@ kind: Deployment
 metadata:
   name: my-file
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
-      app: my-react-app-v2  # Change the label value to a new label.
+      app: my-app
   template:
     metadata:
       labels:
-        app: my-react-app-v2  # Change the label value to a new label.
-    spec:
+        app: my-app  
+    spec:    
       containers:
         - name: my-react-app-container
-          image: anuruddhakhare/app
+          image: anuruddhakhare/app:latest
