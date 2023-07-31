@@ -3,10 +3,9 @@ kind: Service
 metadata:
   name: my-react-app-srv
 spec:
-  type: LoadBalancer 
+  type: NodePort
   selector:
     app: react-app
   ports:
     - name: my-app
       port: 8000
-      targetPort: 8000
