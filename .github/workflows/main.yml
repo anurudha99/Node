@@ -1,8 +1,8 @@
 name: my-workflow
-'on': push 
+'on': push
 jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
       - name: my-step
-      run: dockerfile
+        run: dockerfile
