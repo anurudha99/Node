@@ -23,5 +23,4 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-          push: true
-          tags: recatnew-app
+         
