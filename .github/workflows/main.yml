@@ -25,4 +25,4 @@ jobs:
           file: ./Dockerfile
           username:  anuruddhakhare
           password: Anuruddha
-          tags: React
+          tags: react
