@@ -23,4 +23,6 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-          -- load: docker pull anuruddhakhare/app
+          username:  anuruddhakhare
+          password: Anuruddha
+          tags: React
