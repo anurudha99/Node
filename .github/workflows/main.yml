@@ -23,6 +23,4 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-          push: true
-          tags: niranjang2/book-management-app:${{ github.sha }}
-          build-args: REACT_APP_BASE_URL=${{ secrets.REACT_APP_BASE_URL }}
+         
